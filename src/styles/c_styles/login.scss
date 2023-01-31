@@ -1,0 +1,96 @@
+@import '../vars.scss';
+
+.form {
+  &-container {
+    background-color: $c-main;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-wrapper {
+    background-color: $c-white;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: $b-r-medium;
+
+    .logo {
+      color: $c-d-purple;
+      font-size: 2.6rem;
+      font-weight: 700;
+    }
+
+    .title {
+      color: $c-d-purple;
+      margin-bottom: 5px;
+    }
+
+    &__form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 10px;
+
+      input[type='file'] {
+        display: none;
+      }
+
+      input {
+        padding: 15px;
+        width: 270px;
+        border-bottom: 1px solid $c-main;
+        transition: $def-transition;
+
+        &::placeholder {
+          color: $c-grey;
+        }
+
+        &:focus {
+          border-color: $c-h-blue;
+        }
+      }
+
+      label {
+        width: 165px;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        color: $c-main;
+
+        img {
+          width: 40px;
+        }
+
+        span {
+          transition: $def-transition;
+        }
+
+        &:hover span {
+          color: $c-h-blue;
+        }
+      }
+
+      button {
+        color: $c-white;
+        background-color: $c-s-blue;
+        padding: 10px 0;
+        font-weight: 700;
+        border-radius: $b-r-small;
+        margin-top: 5px;
+        transition: $def-transition;
+
+        &:hover {
+          background-color: $c-h-blue;
+        }
+      }
+    }
+
+    p {
+      color: $c-d-purple;
+    }
+  }
+}
