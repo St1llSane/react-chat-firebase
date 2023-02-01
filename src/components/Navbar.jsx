@@ -1,5 +1,4 @@
 import '../styles/c_styles/navbar.scss'
-import mainUser from '../images/users/mainUser.jpg'
 
 const Navbar = () => {
   return (
@@ -7,7 +6,7 @@ const Navbar = () => {
       <h1 className="logo">Still Chat</h1>
       <div className="user">
         <a href='#'>
-          <img src={mainUser} alt="avatar" />
+          <img src="./images/users/main-user.jpg" alt="avatar" />
           <span>Alexander Vetrov</span>
         </a>
         <button>Logout</button>

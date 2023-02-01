@@ -1,5 +1,4 @@
 import '../styles/c_styles/login.scss'
-import addAvatar from '../images/addAvatar.png'
 
 const Register = () => {
   return (
@@ -13,7 +12,7 @@ const Register = () => {
           <input type="password" placeholder="password" />
           <input type="file" id="file" />
           <label htmlFor="file">
-            <img src={addAvatar} alt="add-avatar" />
+            <img src="./images/add-avatar.jpg" alt="add-avatar" />
             <span>Add an avatar</span>
           </label>
           <button>Sign up</button>

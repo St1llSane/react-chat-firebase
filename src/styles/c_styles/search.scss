@@ -1,6 +1,7 @@
 @import '../vars.scss';
 
 .search {
+	padding-bottom: 4px;
   border-bottom: 1px solid $c-grey;
   &__form {
     &-input {
