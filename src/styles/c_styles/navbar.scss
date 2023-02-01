@@ -3,7 +3,7 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  background-color: #434266;
+  background-color: $c-darkest-purple;
   padding: 10px 15px 0 15px;
 
   .logo {
@@ -39,13 +39,13 @@
     }
 
     img {
-      width: 46px;
+      width: 55px;
       border-radius: 50px;
 			object-fit: cover;
     }
 
     span {
-      font-size: 1.8rem;
+      font-size: $f-medium;
       font-weight: 700;
     }
 

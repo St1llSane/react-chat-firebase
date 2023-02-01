@@ -6,12 +6,15 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding: 15px;
 
 	&-wrapper {
-		border: 1px solid #fff;
+		border: 1px solid $c-white;
 		border-radius: $b-r-medium;
-		width: 70%;
-		height: 85%;
+		width: 100%;
+		max-width: 1400px;
+		height: 100%;
+		max-height: 800px;
 		display: flex;
 		overflow: hidden;
 	}

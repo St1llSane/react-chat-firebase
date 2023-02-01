@@ -1,3 +1,4 @@
+import User from './User'
 import '../styles/c_styles/search.scss'
 
 const Search = () => {
@@ -10,12 +11,7 @@ const Search = () => {
           placeholder="Search..."
         />
       </form>
-      <div className="user-chat">
-        <img src="./users/user-1.jpg" alt="" />
-        <div className="user-chat__info">
-          <span>Grisha Svetov</span>
-        </div>
-      </div>
+      <User />
     </div>
   )
 }
