@@ -1,3 +1,5 @@
+@import './vars.scss';
+
 html {
 	font-size: 62.5%;
 }
@@ -8,5 +10,6 @@ body {
 }
 
 .app {
-	font-size: 1.6rem;
+	font-size: $f-def;
+	font-weight: 500;
 }

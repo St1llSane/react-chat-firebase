@@ -1,0 +1,18 @@
+@import '../vars.scss';
+
+.home {
+  background-color: $c-main;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&-wrapper {
+		border: 1px solid #fff;
+		border-radius: $b-r-medium;
+		width: 70%;
+		height: 85%;
+		display: flex;
+		overflow: hidden;
+	}
+}

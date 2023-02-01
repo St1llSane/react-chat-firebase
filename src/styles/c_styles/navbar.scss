@@ -1,0 +1,63 @@
+@import '../vars.scss';
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #434266;
+  padding: 10px 15px 0 15px;
+
+  .logo {
+    font-size: $f-big;
+    margin-bottom: 10px;
+  }
+
+  .user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    position: relative;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: $c-white;
+    }
+
+    &::before {
+      position: absolute;
+      content: '';
+      left: -15px;
+      right: 0;
+      width: calc(100% + 30px);
+      height: 1px;
+      background-color: $c-white;
+    }
+    &::before {
+      top: 0;
+    }
+
+    img {
+      width: 46px;
+      border-radius: 50px;
+			object-fit: cover;
+    }
+
+    span {
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    button {
+      padding: 4px 10px 5px 10px;
+      background-color: $c-s-blue;
+      border-radius: $b-r-small;
+      transition: $def-transition;
+
+      &:hover {
+        background-color: $c-h-blue;
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@ const Login = () => {
   return (
     <section className="form-container">
       <div className="form-wrapper">
-        <h2 className="logo">Still Chat</h2>
+        <h1 className="logo">Still Chat</h1>
         <span className="title">Login</span>
         <form className="form-wrapper__form">
           <input type="email" placeholder="email" />

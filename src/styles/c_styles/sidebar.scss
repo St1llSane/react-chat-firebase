@@ -1,0 +1,7 @@
+@import '../vars.scss';
+
+.sidebar {
+  flex: 1;
+  background: linear-gradient(130deg, #5d5b8d, #504e7a);
+	color: $c-white;
+}

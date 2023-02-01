@@ -1,0 +1,29 @@
+@import '../vars.scss';
+
+.search {
+  &__form {
+    border-bottom: 1px solid $c-grey;
+
+    &-input {
+      padding: 13px 15px;
+      width: 100%;
+
+      &::placeholder {
+        color: $c-grey;
+      }
+    }
+  }
+
+	.user-chat {
+		img {
+			width: 54px;
+			height: 54px;
+			border-radius: 50px;
+			object-fit: cover;
+		}
+
+		&__info {
+			
+		}
+	}
+}
