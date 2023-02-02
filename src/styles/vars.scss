@@ -1,8 +1,10 @@
 $c-white: #fff;
 $c-main: #aec1ff;
 $c-grey: #cccccc;
+$c-l-purple: #cccbf1;
 $c-d-purple: #5d5b8d;
 $c-darkest-purple: #434266;
+$c-gradient-purple: linear-gradient(135deg, #5d5b8d 35%, #535180 100%);
 $c-s-blue: #8f9ffa;
 $c-h-blue: #778cff;
 
@@ -11,6 +13,8 @@ $def-transition: all .15s ease;
 $b-r-small: 5px;
 $b-r-medium: 15px;
 
+
+$f-small: 1.4rem;
 $f-def: 1.6rem;
 $f-medium: 1.8rem;
 $f-big: 2.6rem;

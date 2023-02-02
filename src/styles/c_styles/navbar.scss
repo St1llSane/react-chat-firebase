@@ -4,11 +4,11 @@
   display: flex;
   flex-direction: column;
   background-color: $c-darkest-purple;
-  padding: 10px 15px 0 15px;
+  padding: 9px 15px 0 15px;
 
   .logo {
     font-size: $f-big;
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   .user {
@@ -51,6 +51,7 @@
 
     button {
       padding: 4px 10px 5px 10px;
+			font-weight: 700;
       background-color: $c-s-blue;
       border-radius: $b-r-small;
       transition: $def-transition;

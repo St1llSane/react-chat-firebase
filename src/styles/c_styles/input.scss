@@ -1,0 +1,56 @@
+@import '../vars.scss';
+
+.input {
+	height: 46px;
+	background-color: $c-white;
+	display: flex;
+	align-items: center;
+	padding: 0 10px;
+
+	input {
+		padding-right: 15px;
+		font-size: $f-small;
+
+		&::placeholder {
+			color: $c-grey;
+		}
+	}
+
+	&__functions {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		margin-left: auto;
+
+		li {
+			height: 22px;
+
+			input[type="file"] {
+				display: none;
+			}
+
+			button, label {
+				height: inherit;
+
+				img {
+					height: inherit;
+					object-fit: cover;
+				}
+			}
+		}
+	}
+
+	&__send {
+		margin-left: 20px;
+		padding: 4px 16px;
+		background-color: $c-s-blue;
+		border-radius: $b-r-small;
+		color: $c-white;
+		font-weight: 700;
+		transition: $def-transition;
+
+		&:hover {
+			background-color: $c-h-blue;
+		}
+	}
+}

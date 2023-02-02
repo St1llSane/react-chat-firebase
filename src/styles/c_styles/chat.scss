@@ -2,4 +2,29 @@
 
 .chat {
   flex: 2;
+	
+  &-header {
+		color: $c-white;
+		background: $c-gradient-purple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 15px;
+
+    &__functions {
+      display: flex;
+      gap: 12px;
+
+      li {
+       height: 25px;
+
+        button {
+					height: inherit;
+          img {
+            height: inherit;
+          }
+        }
+      }
+    }
+  }
 }
