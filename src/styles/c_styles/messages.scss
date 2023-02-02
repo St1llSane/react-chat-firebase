@@ -1,0 +1,11 @@
+@import '../vars.scss';
+
+.messages {
+  background-color: $c-l-purple;
+  height: calc(100% - 99px);
+  padding: 10px;
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	row-gap: 12px;
+}

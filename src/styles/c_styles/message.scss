@@ -1,7 +1,57 @@
 @import '../vars.scss';
 
-.messages {
-	background-color: $c-l-purple;
-	height: calc(100% - 99px);
-	padding: 10px;
+.message {
+  display: flex;
+  gap: 12px;
+
+  &__info {
+    img {
+      width: 40px;
+      border-radius: 50px;
+      object-fit: cover;
+    }
+
+    span {
+      display: block;
+      color: #838383;
+      font-size: $f-tiny;
+      margin-top: -3px;
+    }
+  }
+
+  &__content {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    p {
+      background-color: $c-white;
+      padding: 2px 6px;
+      border-radius: 0 5px 5px 5px;
+			margin-top: 28px;
+      font-size: $f-small;
+      max-width: max-content;
+    }
+
+    img {
+      width: 50%;
+      object-fit: cover;
+      border-radius: $b-r-small;
+    }
+  }
+
+  &.owner {
+    flex-direction: row-reverse;
+
+    .message__content {
+			align-items: flex-end;
+
+      p {
+        color: $c-white;
+        border-radius: 5px 0 5px 5px;
+        background-color: $c-m-purple;
+      }
+    }
+  }
 }
