@@ -5,10 +5,16 @@
   flex-direction: column;
   background-color: $c-darkest-purple;
   padding: 9px 15px 0 15px;
+  @include tablet {
+    padding-top: 0;
+  }
 
   .logo {
     font-size: $f-big;
     margin-bottom: 8px;
+    @include tablet {
+      display: none;
+    }
   }
 
   .user {
@@ -30,18 +36,19 @@
       content: '';
       left: -15px;
       right: 0;
+      top: 0;
       width: calc(100% + 30px);
       height: 1px;
       background-color: $c-white;
-    }
-    &::before {
-      top: 0;
+      @include tablet {
+        display: none;
+      }
     }
 
     img {
       width: 55px;
       border-radius: 50px;
-			object-fit: cover;
+      object-fit: cover;
     }
 
     span {
@@ -51,7 +58,7 @@
 
     button {
       padding: 4px 10px 5px 10px;
-			font-weight: 700;
+      font-weight: 700;
       background-color: $c-s-blue;
       border-radius: $b-r-small;
       transition: $def-transition;

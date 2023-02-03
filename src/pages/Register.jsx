@@ -12,7 +12,7 @@ const Register = () => {
           <input type="password" placeholder="password" />
           <input type="file" id="file" />
           <label htmlFor="file">
-            <img src="./images/add-avatar.jpg" alt="add-avatar" />
+            <img src="./images/add-avatar.png" alt="add-avatar" />
             <span>Add an avatar</span>
           </label>
           <button>Sign up</button>
